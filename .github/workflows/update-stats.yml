@@ -1,0 +1,25 @@
+name: Update channel stats
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:         # lets you run it manually
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch-stats.mjs
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          YT_HANDLE: ${{ vars.YT_HANDLE }}
+      - name: Save data.json
+        run: |
+          git config user.name "stats-bot"
+          git config user.email "stats-bot@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || (git commit -m "Update stats" && git push)
