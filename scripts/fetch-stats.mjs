@@ -15,8 +15,14 @@ if (!ch.items?.length) throw new Error('Channel not found: ' + HANDLE);
 const c = ch.items[0], s = c.statistics;
 const latest = { subs: s.hiddenSubscriberCount ? null : +s.subscriberCount, views: +s.viewCount, videos: +s.videoCount };
 
-const pl = await api('playlistItems', {part: 'contentDetails', playlistId: c.contentDetails.relatedPlaylists.uploads, maxResults: 12});
-const ids = (pl.items || []).map(i => i.contentDetails.videoId);
+// New channels with no public uploads have no uploads playlist yet; treat as zero videos
+let ids = [];
+try {
+  const pl = await api('playlistItems', {part: 'contentDetails', playlistId: c.contentDetails.relatedPlaylists.uploads, maxResults: 12});
+  ids = (pl.items || []).map(i => i.contentDetails.videoId);
+} catch (e) {
+  console.log('No uploads found yet:', e.message);
+}
 let videos = [];
 if (ids.length) {
   const v = await api('videos', {part: 'snippet,statistics', id: ids.join(',')});
