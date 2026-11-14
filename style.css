@@ -1,3 +1,4 @@
+html{background:#0d0b1f}
 
   :root{
     --bg1:#0d0b1f; --bg2:#1d1442; --glass:rgba(255,255,255,.07); --line:rgba(255,255,255,.14);
@@ -64,3 +65,16 @@
 }
 .live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#5eead4;margin-right:6px;box-shadow:0 0 10px #5eead4;animation:p 2s infinite}
 @keyframes p{50%{opacity:.35}}
+
+
+.tag{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:1px;padding:2px 6px;border-radius:6px;margin-right:8px;vertical-align:2px}
+.tag.yt{background:rgba(255,92,92,.18);color:#ff8a8a}
+.tag.ig{background:rgba(225,48,108,.18);color:#ff8fbf}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.seg button{background:transparent;border:0;color:var(--muted);font:inherit;font-size:.8rem;padding:6px 14px;border-radius:999px;cursor:pointer;min-height:32px}
+.seg button[aria-pressed="true"]{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+.seg button:hover{color:var(--text)}
+.vid .ph{width:96px;height:54px;border-radius:10px;background:rgba(255,255,255,.08);flex-shrink:0}
+.vid .t .tag{font-size:.55rem;padding:1px 5px;margin-right:6px}
+.warn{margin-bottom:18px;padding:12px 16px;border-radius:14px;border:1px solid rgba(251,113,133,.5);background:rgba(251,113,133,.1);font-size:.9rem}
+.warn[hidden]{display:none}

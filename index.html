@@ -14,41 +14,49 @@
   <img id="avatar" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%233b2a7a'/%3E%3C/svg%3E">
   <div>
     <h1 id="chName">Factify Hindi</h1>
-    <p id="chSub">Live growth dashboard</p>
+    <p id="chSub">YouTube + Instagram · live growth</p>
   </div>
   <div class="spacer"></div>
   <a class="btn" href="https://studio.youtube.com" target="_blank" rel="noopener">YT Studio ↗</a>
-  <button class="btn" id="refreshBtn">↻</button>
+  <a class="btn" id="igLink" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+  <button class="btn" id="refreshBtn" aria-label="Refresh">↻</button>
 </header>
 
+<div id="igWarn" class="warn" hidden></div>
+
 <section class="stats">
-  <div class="stat glass"><div class="label">Subscribers</div><div class="value" id="subs">—</div><div class="delta" id="subsD"></div></div>
-  <div class="stat glass"><div class="label">Total Views</div><div class="value" id="views">—</div><div class="delta" id="viewsD"></div></div>
-  <div class="stat glass"><div class="label">Videos</div><div class="value" id="videos">—</div><div class="delta" id="videosD"></div></div>
-  <div class="stat glass"><div class="label">Avg views / video</div><div class="value" id="avg">—</div><div class="delta" id="avgD"></div></div>
+  <div class="stat glass"><div class="label"><span class="tag yt">YT</span>Subscribers</div><div class="value" id="subs">—</div><div class="delta" id="subsD"></div></div>
+  <div class="stat glass"><div class="label"><span class="tag yt">YT</span>Views</div><div class="value" id="views">—</div><div class="delta" id="viewsD"></div></div>
+  <div class="stat glass"><div class="label"><span class="tag ig">IG</span>Followers</div><div class="value" id="igf">—</div><div class="delta" id="igfD"></div></div>
+  <div class="stat glass"><div class="label"><span class="tag ig">IG</span>Likes</div><div class="value" id="igl">—</div><div class="delta" id="iglD"></div></div>
 </section>
 
 <section class="grid2">
   <div class="panel glass">
-    <h2>Growth
-      <select id="metric">
-        <option value="subs">Subscribers</option>
-        <option value="views">Views</option>
-        <option value="videos">Videos</option>
-      </select>
+    <h2>Audience growth
+      <span class="seg" role="group" aria-label="Choose graph">
+        <button type="button" data-show="yt">YouTube</button>
+        <button type="button" data-show="ig">Instagram</button>
+        <button type="button" data-show="both">Both</button>
+      </span>
     </h2>
     <div class="chartbox"><canvas id="chart"></canvas></div>
     <div class="empty" id="chartNote" style="display:none"></div>
   </div>
   <div class="panel glass">
-    <h2>Latest uploads</h2>
+    <h2>Latest posts
+      <span class="seg" role="group" aria-label="Choose platform">
+        <button type="button" data-feed="yt">YouTube</button>
+        <button type="button" data-feed="ig">Instagram</button>
+      </span>
+    </h2>
     <div class="vids" id="vids"><div class="empty">Loading…</div></div>
   </div>
 </section>
 
 <footer>
   <span id="updated">Loading…</span>
-  <span>Stats refresh every 30 min · YouTube rounds public subscriber counts</span>
+  <span>Refreshes every 30 min · YouTube rounds public subscriber counts · IG likes = latest 12 posts</span>
 </footer>
 
 <script src="app.js"></script>
