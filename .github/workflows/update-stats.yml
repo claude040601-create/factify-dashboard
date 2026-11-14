@@ -1,7 +1,7 @@
 name: Update channel stats
 on:
   schedule:
-    - cron: '*/30 * * * *'   # every 30 minutes
+    - cron: '*/10 * * * *'   # every 10 minutes
   workflow_dispatch:         # lets you run it manually
 permissions:
   contents: write
