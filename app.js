@@ -42,7 +42,7 @@ async function load(){
   } else {
     ['igfD', 'iglD'].forEach(id => $(id).innerHTML = '<span>connect Instagram to see this</span>');
   }
-  renderPosts(); drawChart(); warnings();
+  renderPosts(); drawChart(); renderWeek(); warnings();
   const t = [yt && yt.updatedAt, ig && ig.updatedAt].filter(Boolean).sort().pop();
   $('updated').innerHTML = t ? '<span class="live"></span>Updated ' + ago(t) : '⚠ No data yet — run the GitHub Action once.';
 }
@@ -112,3 +112,43 @@ function warnings(){
 $('refreshBtn').onclick = load;
 load();
 setInterval(load, 5 * 60 * 1000);
+
+/* ---------- This week ---------- */
+function weekAgoVal(hist, key){
+  /* value 7 days ago, or the first tracked day if the channel is younger than a week */
+  const target = daysAgo(7);
+  const ds = Object.keys(hist || {}).filter(d => d >= START).sort();
+  if (!ds.length) return null;
+  const before = ds.filter(d => d <= target);
+  return (before.length ? hist[before[before.length - 1]] : hist[ds[0]])[key];
+}
+function weekRow(label, tag, cur, prev){
+  const d = cur != null && prev != null ? cur - prev : null;
+  const cls = d > 0 ? 'up' : d < 0 ? 'down' : '';
+  return `<div class="wk-row"><span class="tag ${tag}">${tag.toUpperCase()}</span><span class="wk-l">${label}</span>
+    <span class="wk-v ${cls}">${d == null ? '—' : (d > 0 ? '+' : '') + fmt(d)}</span></div>`;
+}
+function renderWeek(){
+  const box = $('week'); if (!box) return;
+  const yh = (yt && yt.history) || {}, ih = (ig && ig.history) || {};
+  const ys = yt && yt.latest || {}, is = ig && ig.latest || {};
+  const firstDay = [...Object.keys(yh), ...Object.keys(ih)].filter(d => d >= START).sort()[0];
+  const days = firstDay ? Math.min(7, Math.round((new Date(daysAgo(0)) - new Date(firstDay)) / DAY) + 1) : 0;
+  $('weekSub').textContent = days >= 7 ? 'last 7 days' : `first ${days} day${days === 1 ? '' : 's'} of tracking`;
+  const rows = weekRow('Subscribers', 'yt', ys.subs, weekAgoVal(yh, 'subs')) +
+               weekRow('Views', 'yt', ys.views, weekAgoVal(yh, 'views')) +
+               weekRow('Followers', 'ig', is.followers, weekAgoVal(ih, 'followers')) +
+               weekRow('Likes', 'ig', is.likes, weekAgoVal(ih, 'likes'));
+  const since = Date.now() - 7 * DAY;
+  const bestYT = (yt && yt.videos || []).filter(v => new Date(v.published) >= since).sort((a, b) => b.views - a.views)[0];
+  const bestIG = (ig && ig.media || []).filter(m => new Date(m.published) >= since).sort((a, b) => (b.likes || 0) - (a.likes || 0))[0];
+  const best = (x, tag, url, title, stat) => x ? `
+    <a class="wk-best" href="${url}" target="_blank" rel="noopener">
+      ${x.thumb ? `<img src="${x.thumb}" alt="">` : '<span class="ph"></span>'}
+      <span><span class="wk-cap"><span class="tag ${tag}">${tag.toUpperCase()}</span>Best this week</span>
+      <span class="wk-t">${title.replace(/</g, '&lt;')}</span><span class="wk-s">${stat}</span></span>
+    </a>` : '';
+  const bests = best(bestYT, 'yt', bestYT && 'https://youtube.com/watch?v=' + bestYT.id, bestYT && bestYT.title, bestYT && `👁 ${fmt(bestYT.views)} views · 👍 ${fmt(bestYT.likes)}`) +
+                best(bestIG, 'ig', bestIG && bestIG.url, bestIG && (bestIG.caption || 'Reel'), bestIG && `♥ ${fmt(bestIG.likes)} likes · 💬 ${fmt(bestIG.comments || 0)}`);
+  box.innerHTML = `<div class="wk-rows">${rows}</div>${bests ? `<div class="wk-bests">${bests}</div>` : ''}`;
+}
