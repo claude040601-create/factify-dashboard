@@ -1,6 +1,7 @@
 const $ = id => document.getElementById(id);
 const fmt = n => n == null ? '—' : Intl.NumberFormat('en-IN', {notation: n >= 100000 ? 'compact' : 'standard', maximumFractionDigits: 1}).format(n);
 const DAY = 864e5;
+const START = '2026-11-14';          /* day one of Factify Hindi tracking */
 let yt = null, ig = null, chart;
 let feed = (() => { try { return localStorage.getItem('fh_feed') || 'yt'; } catch(e){ return 'yt'; } })();
 let show = (() => { try { return localStorage.getItem('fh_show') || 'both'; } catch(e){ return 'both'; } })();
@@ -71,7 +72,7 @@ document.querySelectorAll('[data-feed]').forEach(b => b.onclick = () => {
 function drawChart(){
   document.querySelectorAll('[data-show]').forEach(b => b.setAttribute('aria-pressed', b.dataset.show === show));
   const yh = (yt && yt.history) || {}, ih = (ig && ig.history) || {};
-  const dates = [...new Set([...(show !== 'ig' ? Object.keys(yh) : []), ...(show !== 'yt' ? Object.keys(ih) : [])])].sort().slice(-90);
+  const dates = [...new Set([...(show !== 'ig' ? Object.keys(yh) : []), ...(show !== 'yt' ? Object.keys(ih) : [])])].filter(d => d >= START).sort().slice(-90);
   const sets = [];
   const mk = (label, color, fillTop, vals) => {
     const ctx = $('chart').getContext('2d'), g = ctx.createLinearGradient(0, 0, 0, 300);
