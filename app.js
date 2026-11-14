@@ -12,7 +12,8 @@ function past(hist, key, days){
   return ds.length ? hist[ds[ds.length - 1]][key] : null;
 }
 function deltaHtml(cur, prev, label){
-  if (prev == null || cur == null) return '<span>tracking started — more soon</span>';
+  if (cur == null) return '';
+  if (prev == null) prev = cur;            /* first day of tracking: show 0 until there is history */
   const d = cur - prev, cls = d > 0 ? 'up' : d < 0 ? 'down' : '';
   return `<b class="${cls}">${d > 0 ? '+' : ''}${fmt(d)}</b> ${label}`;
 }
