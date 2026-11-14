@@ -2,18 +2,35 @@
 import fs from 'node:fs';
 const TOKEN = process.env.IG_TOKEN;
 if (!TOKEN) { console.log('IG_TOKEN secret not set yet: skipping Instagram.'); process.exit(0); }
-const get = async (path, params) => {
-  const r = await fetch('https://graph.instagram.com/' + path + '?' + new URLSearchParams({...params, access_token: TOKEN}));
+const IG_ID = process.env.IG_USER_ID || '17841445222837990';     // @factifyhindifacts
+const call = async (base, path, params) => {
+  const r = await fetch(base + path + '?' + new URLSearchParams({...params, access_token: TOKEN}));
   const j = await r.json();
   if (j.error) throw new Error(j.error.message);
   return j;
 };
+const PROFILE = 'username,followers_count,follows_count,media_count,profile_picture_url';
+const MEDIA = 'id,caption,media_type,media_product_type,thumbnail_url,media_url,permalink,timestamp,like_count,comments_count';
 
-const me = await get('me', {fields: 'username,followers_count,follows_count,media_count,profile_picture_url'});
+// Meta issues two kinds of keys: Instagram-login keys (graph.instagram.com) and
+// Facebook/unified-login keys (graph.facebook.com). Try one, fall back to the other.
+let me, base, who;
+try {
+  base = 'https://graph.instagram.com/'; who = 'me';
+  me = await call(base, who, {fields: PROFILE});
+} catch (e1) {
+  try {
+    base = 'https://graph.facebook.com/v21.0/'; who = IG_ID;
+    me = await call(base, who, {fields: PROFILE});
+  } catch (e2) {
+    throw new Error('Instagram key rejected. Instagram API: ' + e1.message + ' | Facebook API: ' + e2.message);
+  }
+}
+console.log('Connected via', base);
 
 let media = [];
 try {
-  const m = await get('me/media', {fields: 'id,caption,media_type,media_product_type,thumbnail_url,media_url,permalink,timestamp,like_count,comments_count', limit: 12});
+  const m = await call(base, who + '/media', {fields: MEDIA, limit: 12});
   media = (m.data || []).map(x => ({
     id: x.id,
     caption: (x.caption || '').split('\n')[0].slice(0, 120),
