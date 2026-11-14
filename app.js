@@ -88,7 +88,8 @@ function drawChart(){
   chart = new Chart($('chart').getContext('2d'), {type: 'line',
     data: {labels: dates.map(d => new Date(d).toLocaleDateString('en-IN', {day:'numeric', month:'short'})), datasets: sets},
     options: {responsive: true, maintainAspectRatio: false, interaction: {mode: 'index', intersect: false},
-      plugins: {legend: {display: show === 'both', labels: {color: '#d9d2f5', usePointStyle: true, boxWidth: 8}}},
+      plugins: {legend: {display: show === 'both', align: 'center', labels: {color: '#d9d2f5', font: {family: 'Outfit', size: 12}, padding: 18, usePointStyle: true, pointStyle: 'circle', boxWidth: 7, boxHeight: 7,
+        generateLabels: c => Chart.defaults.plugins.legend.labels.generateLabels(c).map(l => ({...l, fillStyle: l.strokeStyle, lineWidth: 0}))}}},
       scales: {x: {ticks: {color: '#b9aee0'}, grid: {color: 'rgba(255,255,255,.05)'}},
                y: {ticks: {color: '#b9aee0', callback: v => fmt(v)}, grid: {color: 'rgba(255,255,255,.05)'}}}}});
 }
