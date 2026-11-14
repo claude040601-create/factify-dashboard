@@ -19,6 +19,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           if [ -z "$IG_TOKEN" ]; then echo "IG_TOKEN not set yet."; exit 0; fi
+          case "$IG_TOKEN" in
+            EA*) echo "This is a never-expiring system-user key: no renewal needed."; exit 0;;
+          esac
           RES=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_TOKEN")
           NEW=$(echo "$RES" | jq -r '.access_token // empty')
           EXP=$(echo "$RES" | jq -r '.expires_in // empty')
