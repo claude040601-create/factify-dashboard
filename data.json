@@ -1,23 +1,23 @@
 {
- "updatedAt": "2026-11-14T18:23:55.225Z",
+ "updatedAt": "2026-11-14T19:11:59.693Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
   "avatar": "https://yt3.ggpht.com/p87bDmNZPgXyxG9EsRhJk-DqDShEqPMOZiboIRdpEY2dzvW_ezZ28LfHby8za4EuXYx9NsOwTwo=s240-c-k-c0x00ffffff-no-rj"
  },
  "latest": {
-  "subs": 0,
+  "subs": 2,
   "views": 0,
   "videos": 1
  },
  "videos": [
   {
    "id": "idedsdc_Hs0",
-   "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳",
+   "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳 #shorts",
    "published": "2026-11-14T14:25:18Z",
    "thumb": "https://i.ytimg.com/vi/idedsdc_Hs0/mqdefault.jpg",
-   "views": 86,
-   "likes": 4,
+   "views": 172,
+   "likes": 6,
    "comments": 0
   }
  ],
@@ -29,6 +29,11 @@
   },
   "2026-11-14": {
    "subs": 0,
+   "views": 0,
+   "videos": 1
+  },
+  "2026-11-15": {
+   "subs": 2,
    "views": 0,
    "videos": 1
   }
