@@ -39,9 +39,23 @@ try { old = JSON.parse(fs.readFileSync('data.json', 'utf8')); } catch {}
 const day = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
 old.history[day] = latest;
 
+// per-video history: daily views + views at 24 hours after upload
+const vh = old.videoHistory || {};
+const nowMs = Date.now();
+for (const v of videos) {
+  const h = vh[v.id] || (vh[v.id] = { title: v.title, published: v.published, daily: {}, first24: null, first24Missed: false });
+  h.title = v.title;
+  h.daily[day] = { views: v.views, likes: v.likes, comments: v.comments };
+  const ageH = (nowMs - new Date(v.published)) / 3600e3;
+  if (h.first24 == null && !h.first24Missed) {
+    if (ageH >= 24 && ageH < 30) h.first24 = v.views;          // first check after the 24-hour mark
+    else if (ageH >= 30) h.first24Missed = true;                 // video was already older when tracking began
+  }
+}
+
 fs.writeFileSync('data.json', JSON.stringify({
   updatedAt: new Date().toISOString(),
   channel: { title: c.snippet.title, handle: HANDLE, avatar: c.snippet.thumbnails.medium?.url || '' },
-  latest, videos, history: old.history
+  latest, videos, history: old.history, videoHistory: vh
 }, null, 1));
 console.log('Updated', day, latest);
