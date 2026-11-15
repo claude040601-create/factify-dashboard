@@ -30,7 +30,7 @@ header h1{font:17px var(--disp);letter-spacing:.2px;margin-left:4px}
 .lb{font-size:13px;font-weight:500;opacity:.78}
 .v{font:31px var(--disp);letter-spacing:-.5px;line-height:1;margin:16px 0 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .st.hero .v{font-size:44px}
-.d{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;padding:5px 10px;border-radius:99px;background:rgba(15,138,95,.12);color:var(--up);min-height:26px}
+.d{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;padding:5px 10px;border-radius:99px;background:rgba(15,138,95,.12);color:var(--up);min-height:26px;white-space:nowrap}
 .d:empty{visibility:hidden}
 .st.yt .d{background:rgba(27,18,64,.1);color:var(--ink)}
 .st.ig .d{background:rgba(217,204,255,.15);color:#d9ccff}
