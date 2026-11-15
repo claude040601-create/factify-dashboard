@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T06:06:32.218Z",
+ "updatedAt": "2026-11-15T07:05:37.434Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 4,
-  "views": 0,
+  "views": 476,
   "videos": 1
  },
  "videos": [
@@ -34,8 +34,23 @@
   },
   "2026-11-15": {
    "subs": 4,
-   "views": 0,
+   "views": 476,
    "videos": 1
+  }
+ },
+ "videoHistory": {
+  "idedsdc_Hs0": {
+   "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳 #shorts",
+   "published": "2026-11-14T14:25:18Z",
+   "daily": {
+    "2026-11-15": {
+     "views": 602,
+     "likes": 14,
+     "comments": 2
+    }
+   },
+   "first24": null,
+   "first24Missed": false
   }
  }
 }
