@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T11:44:49.757Z",
+ "updatedAt": "2026-11-16T14:12:30.624Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,15 +8,24 @@
  "latest": {
   "subs": 5,
   "views": 1167,
-  "videos": 2
+  "videos": 3
  },
  "videos": [
+  {
+   "id": "zXBwvOncvk4",
+   "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
+   "published": "2026-11-16T12:00:04Z",
+   "thumb": "https://i.ytimg.com/vi/zXBwvOncvk4/mqdefault.jpg",
+   "views": 38,
+   "likes": 1,
+   "comments": 0
+  },
   {
    "id": "PIqoCmBWdDk",
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 257,
+   "views": 295,
    "likes": 5,
    "comments": 0
   },
@@ -25,7 +34,7 @@
    "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳 #shorts",
    "published": "2026-11-14T14:25:18Z",
    "thumb": "https://i.ytimg.com/vi/idedsdc_Hs0/mqdefault.jpg",
-   "views": 999,
+   "views": 1017,
    "likes": 19,
    "comments": 2
   }
@@ -49,7 +58,7 @@
   "2026-11-16": {
    "subs": 5,
    "views": 1167,
-   "videos": 2
+   "videos": 3
   }
  },
  "videoHistory": {
@@ -63,7 +72,7 @@
      "comments": 2
     },
     "2026-11-16": {
-     "views": 999,
+     "views": 1017,
      "likes": 19,
      "comments": 2
     }
@@ -81,8 +90,21 @@
      "comments": 0
     },
     "2026-11-16": {
-     "views": 257,
+     "views": 295,
      "likes": 5,
+     "comments": 0
+    }
+   },
+   "first24": 295,
+   "first24Missed": false
+  },
+  "zXBwvOncvk4": {
+   "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
+   "published": "2026-11-16T12:00:04Z",
+   "daily": {
+    "2026-11-16": {
+     "views": 38,
+     "likes": 1,
      "comments": 0
     }
    },
