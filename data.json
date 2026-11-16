@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T14:12:30.624Z",
+ "updatedAt": "2026-11-16T16:17:17.663Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,8 +16,8 @@
    "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
    "published": "2026-11-16T12:00:04Z",
    "thumb": "https://i.ytimg.com/vi/zXBwvOncvk4/mqdefault.jpg",
-   "views": 38,
-   "likes": 1,
+   "views": 102,
+   "likes": 3,
    "comments": 0
   },
   {
@@ -25,8 +25,8 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 295,
-   "likes": 5,
+   "views": 315,
+   "likes": 6,
    "comments": 0
   },
   {
@@ -90,8 +90,8 @@
      "comments": 0
     },
     "2026-11-16": {
-     "views": 295,
-     "likes": 5,
+     "views": 315,
+     "likes": 6,
      "comments": 0
     }
    },
@@ -103,8 +103,8 @@
    "published": "2026-11-16T12:00:04Z",
    "daily": {
     "2026-11-16": {
-     "views": 38,
-     "likes": 1,
+     "views": 102,
+     "likes": 3,
      "comments": 0
     }
    },
