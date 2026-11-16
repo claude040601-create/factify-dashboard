@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T06:04:11.962Z",
+ "updatedAt": "2026-11-16T08:45:34.697Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 605,
+  "views": 1167,
   "videos": 2
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 210,
+   "views": 236,
    "likes": 5,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳 #shorts",
    "published": "2026-11-14T14:25:18Z",
    "thumb": "https://i.ytimg.com/vi/idedsdc_Hs0/mqdefault.jpg",
-   "views": 984,
+   "views": 991,
    "likes": 19,
    "comments": 2
   }
@@ -48,7 +48,7 @@
   },
   "2026-11-16": {
    "subs": 5,
-   "views": 605,
+   "views": 1167,
    "videos": 2
   }
  },
@@ -63,7 +63,7 @@
      "comments": 2
     },
     "2026-11-16": {
-     "views": 984,
+     "views": 991,
      "likes": 19,
      "comments": 2
     }
@@ -81,7 +81,7 @@
      "comments": 0
     },
     "2026-11-16": {
-     "views": 210,
+     "views": 236,
      "likes": 5,
      "comments": 0
     }
