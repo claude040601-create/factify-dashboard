@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T20:22:12.445Z",
+ "updatedAt": "2026-11-16T21:15:27.089Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 1167,
+  "views": 1329,
   "videos": 3
  },
  "videos": [
@@ -25,7 +25,7 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 315,
+   "views": 319,
    "likes": 6,
    "comments": 0
   },
@@ -62,7 +62,7 @@
   },
   "2026-11-17": {
    "subs": 5,
-   "views": 1167,
+   "views": 1329,
    "videos": 3
   }
  },
@@ -105,7 +105,7 @@
      "comments": 0
     },
     "2026-11-17": {
-     "views": 315,
+     "views": 319,
      "likes": 6,
      "comments": 0
     }
