@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T17:46:24.802Z",
+ "updatedAt": "2026-11-17T18:38:42.734Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 1541,
+  "views": 1514,
   "videos": 4
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Jeans Ki Chhoti Pocket Kis Liye Hai? 👖🤔 #shorts",
    "published": "2026-11-17T12:00:33Z",
    "thumb": "https://i.ytimg.com/vi/z_srJugzV8M/mqdefault.jpg",
-   "views": 271,
+   "views": 306,
    "likes": 4,
    "comments": 0
   },
@@ -43,7 +43,7 @@
    "title": "Agar Earth 1 Second Ke Liye Ruk Jaaye Toh? 😳 #shorts",
    "published": "2026-11-14T14:25:18Z",
    "thumb": "https://i.ytimg.com/vi/idedsdc_Hs0/mqdefault.jpg",
-   "views": 1052,
+   "views": 1053,
    "likes": 19,
    "comments": 2
   }
@@ -73,6 +73,11 @@
    "subs": 5,
    "views": 1541,
    "videos": 4
+  },
+  "2026-11-18": {
+   "subs": 5,
+   "views": 1514,
+   "videos": 4
   }
  },
  "videoHistory": {
@@ -92,6 +97,11 @@
     },
     "2026-11-17": {
      "views": 1052,
+     "likes": 19,
+     "comments": 2
+    },
+    "2026-11-18": {
+     "views": 1053,
      "likes": 19,
      "comments": 2
     }
@@ -117,6 +127,11 @@
      "views": 319,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-18": {
+     "views": 319,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -135,6 +150,11 @@
      "views": 178,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-18": {
+     "views": 178,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -146,6 +166,11 @@
    "daily": {
     "2026-11-17": {
      "views": 271,
+     "likes": 4,
+     "comments": 0
+    },
+    "2026-11-18": {
+     "views": 306,
      "likes": 4,
      "comments": 0
     }
