@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T04:34:29.992Z",
+ "updatedAt": "2026-11-17T05:36:10.573Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 1329,
+  "views": 1514,
   "videos": 3
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
    "published": "2026-11-16T12:00:04Z",
    "thumb": "https://i.ytimg.com/vi/zXBwvOncvk4/mqdefault.jpg",
-   "views": 155,
+   "views": 159,
    "likes": 4,
    "comments": 0
   },
@@ -62,7 +62,7 @@
   },
   "2026-11-17": {
    "subs": 5,
-   "views": 1329,
+   "views": 1514,
    "videos": 3
   }
  },
@@ -123,7 +123,7 @@
      "comments": 0
     },
     "2026-11-17": {
-     "views": 155,
+     "views": 159,
      "likes": 4,
      "comments": 0
     }
