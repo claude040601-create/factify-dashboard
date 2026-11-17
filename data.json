@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T11:42:22.385Z",
+ "updatedAt": "2026-11-17T12:40:52.953Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,15 +8,24 @@
  "latest": {
   "subs": 5,
   "views": 1514,
-  "videos": 3
+  "videos": 4
  },
  "videos": [
+  {
+   "id": "z_srJugzV8M",
+   "title": "Jeans Ki Chhoti Pocket Kis Liye Hai? 👖🤔 #shorts",
+   "published": "2026-11-17T12:00:33Z",
+   "thumb": "https://i.ytimg.com/vi/z_srJugzV8M/mqdefault.jpg",
+   "views": 53,
+   "likes": 2,
+   "comments": 0
+  },
   {
    "id": "zXBwvOncvk4",
    "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
    "published": "2026-11-16T12:00:04Z",
    "thumb": "https://i.ytimg.com/vi/zXBwvOncvk4/mqdefault.jpg",
-   "views": 170,
+   "views": 173,
    "likes": 4,
    "comments": 0
   },
@@ -63,7 +72,7 @@
   "2026-11-17": {
    "subs": 5,
    "views": 1514,
-   "videos": 3
+   "videos": 4
   }
  },
  "videoHistory": {
@@ -123,8 +132,21 @@
      "comments": 0
     },
     "2026-11-17": {
-     "views": 170,
+     "views": 173,
      "likes": 4,
+     "comments": 0
+    }
+   },
+   "first24": 173,
+   "first24Missed": false
+  },
+  "z_srJugzV8M": {
+   "title": "Jeans Ki Chhoti Pocket Kis Liye Hai? 👖🤔 #shorts",
+   "published": "2026-11-17T12:00:33Z",
+   "daily": {
+    "2026-11-17": {
+     "views": 53,
+     "likes": 2,
      "comments": 0
     }
    },
