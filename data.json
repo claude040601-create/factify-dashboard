@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T15:45:26.748Z",
+ "updatedAt": "2026-11-17T16:46:22.137Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,7 +8,7 @@
  "latest": {
   "subs": 5,
   "views": 1514,
-  "videos": 3
+  "videos": 4
  },
  "videos": [
   {
@@ -16,8 +16,8 @@
    "title": "Jeans Ki Chhoti Pocket Kis Liye Hai? 👖🤔 #shorts",
    "published": "2026-11-17T12:00:33Z",
    "thumb": "https://i.ytimg.com/vi/z_srJugzV8M/mqdefault.jpg",
-   "views": 188,
-   "likes": 3,
+   "views": 252,
+   "likes": 4,
    "comments": 0
   },
   {
@@ -72,7 +72,7 @@
   "2026-11-17": {
    "subs": 5,
    "views": 1514,
-   "videos": 3
+   "videos": 4
   }
  },
  "videoHistory": {
@@ -145,8 +145,8 @@
    "published": "2026-11-17T12:00:33Z",
    "daily": {
     "2026-11-17": {
-     "views": 188,
-     "likes": 3,
+     "views": 252,
+     "likes": 4,
      "comments": 0
     }
    },
