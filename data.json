@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T14:10:34.070Z",
+ "updatedAt": "2026-11-18T15:14:25.903Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,7 +8,7 @@
  "latest": {
   "subs": 5,
   "views": 1948,
-  "videos": 5
+  "videos": 4
  },
  "videos": [
   {
@@ -16,7 +16,7 @@
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
    "published": "2026-11-18T12:00:25Z",
    "thumb": "https://i.ytimg.com/vi/LkzW5o9JwPw/mqdefault.jpg",
-   "views": 167,
+   "views": 204,
    "likes": 2,
    "comments": 0
   },
@@ -86,7 +86,7 @@
   "2026-11-18": {
    "subs": 5,
    "views": 1948,
-   "videos": 5
+   "videos": 4
   }
  },
  "videoHistory": {
@@ -192,7 +192,7 @@
    "published": "2026-11-18T12:00:25Z",
    "daily": {
     "2026-11-18": {
-     "views": 167,
+     "views": 204,
      "likes": 2,
      "comments": 0
     }
