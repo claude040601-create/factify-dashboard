@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T18:14:49.639Z",
+ "updatedAt": "2026-11-18T19:15:46.070Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -87,6 +87,11 @@
    "subs": 5,
    "views": 1948,
    "videos": 5
+  },
+  "2026-11-19": {
+   "subs": 5,
+   "views": 1948,
+   "videos": 5
   }
  },
  "videoHistory": {
@@ -110,6 +115,11 @@
      "comments": 2
     },
     "2026-11-18": {
+     "views": 1067,
+     "likes": 19,
+     "comments": 2
+    },
+    "2026-11-19": {
      "views": 1067,
      "likes": 19,
      "comments": 2
@@ -141,6 +151,11 @@
      "views": 321,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-19": {
+     "views": 321,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -164,6 +179,11 @@
      "views": 178,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-19": {
+     "views": 178,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -182,6 +202,11 @@
      "views": 551,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-19": {
+     "views": 551,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -192,6 +217,11 @@
    "published": "2026-11-18T12:00:25Z",
    "daily": {
     "2026-11-18": {
+     "views": 262,
+     "likes": 2,
+     "comments": 0
+    },
+    "2026-11-19": {
      "views": 262,
      "likes": 2,
      "comments": 0
