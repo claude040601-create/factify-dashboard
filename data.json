@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-19T17:36:31.926Z",
+ "updatedAt": "2026-11-19T18:31:43.586Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
   "avatar": "https://yt3.ggpht.com/p87bDmNZPgXyxG9EsRhJk-DqDShEqPMOZiboIRdpEY2dzvW_ezZ28LfHby8za4EuXYx9NsOwTwo=s240-c-k-c0x00ffffff-no-rj"
  },
  "latest": {
-  "subs": 6,
+  "subs": 5,
   "views": 2467,
   "videos": 6
  },
@@ -16,7 +16,7 @@
    "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
    "published": "2026-11-19T12:00:08Z",
    "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
-   "views": 100,
+   "views": 101,
    "likes": 1,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
    "published": "2026-11-18T12:00:25Z",
    "thumb": "https://i.ytimg.com/vi/LkzW5o9JwPw/mqdefault.jpg",
-   "views": 391,
+   "views": 394,
    "likes": 3,
    "comments": 0
   },
@@ -52,7 +52,7 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 324,
+   "views": 325,
    "likes": 6,
    "comments": 0
   },
@@ -101,6 +101,11 @@
    "subs": 6,
    "views": 2467,
    "videos": 6
+  },
+  "2026-11-20": {
+   "subs": 5,
+   "views": 2467,
+   "videos": 6
   }
  },
  "videoHistory": {
@@ -129,6 +134,11 @@
      "comments": 2
     },
     "2026-11-19": {
+     "views": 1069,
+     "likes": 19,
+     "comments": 2
+    },
+    "2026-11-20": {
      "views": 1069,
      "likes": 19,
      "comments": 2
@@ -165,6 +175,11 @@
      "views": 324,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-20": {
+     "views": 325,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -193,6 +208,11 @@
      "views": 182,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-20": {
+     "views": 182,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -216,6 +236,11 @@
      "views": 558,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-20": {
+     "views": 558,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -234,6 +259,11 @@
      "views": 391,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-20": {
+     "views": 394,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 376,
@@ -245,6 +275,11 @@
    "daily": {
     "2026-11-19": {
      "views": 100,
+     "likes": 1,
+     "comments": 0
+    },
+    "2026-11-20": {
+     "views": 101,
      "likes": 1,
      "comments": 0
     }
