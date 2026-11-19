@@ -1,16 +1,25 @@
 {
- "updatedAt": "2026-11-19T11:17:00.920Z",
+ "updatedAt": "2026-11-19T12:16:49.388Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
   "avatar": "https://yt3.ggpht.com/p87bDmNZPgXyxG9EsRhJk-DqDShEqPMOZiboIRdpEY2dzvW_ezZ28LfHby8za4EuXYx9NsOwTwo=s240-c-k-c0x00ffffff-no-rj"
  },
  "latest": {
-  "subs": 5,
+  "subs": 6,
   "views": 2467,
-  "videos": 5
+  "videos": 6
  },
  "videos": [
+  {
+   "id": "JnH_DRjML1E",
+   "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
+   "published": "2026-11-19T12:00:08Z",
+   "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
+   "views": 58,
+   "likes": 0,
+   "comments": 0
+  },
   {
    "id": "LkzW5o9JwPw",
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
@@ -89,9 +98,9 @@
    "videos": 5
   },
   "2026-11-19": {
-   "subs": 5,
+   "subs": 6,
    "views": 2467,
-   "videos": 5
+   "videos": 6
   }
  },
  "videoHistory": {
@@ -224,6 +233,19 @@
     "2026-11-19": {
      "views": 376,
      "likes": 3,
+     "comments": 0
+    }
+   },
+   "first24": 376,
+   "first24Missed": false
+  },
+  "JnH_DRjML1E": {
+   "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
+   "published": "2026-11-19T12:00:08Z",
+   "daily": {
+    "2026-11-19": {
+     "views": 58,
+     "likes": 0,
      "comments": 0
     }
    },
