@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T14:36:13.579Z",
+ "updatedAt": "2026-11-19T15:35:08.392Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,8 +16,8 @@
    "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
    "published": "2026-11-19T12:00:08Z",
    "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
-   "views": 89,
-   "likes": 0,
+   "views": 93,
+   "likes": 1,
    "comments": 0
   },
   {
@@ -25,7 +25,7 @@
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
    "published": "2026-11-18T12:00:25Z",
    "thumb": "https://i.ytimg.com/vi/LkzW5o9JwPw/mqdefault.jpg",
-   "views": 384,
+   "views": 388,
    "likes": 3,
    "comments": 0
   },
@@ -43,7 +43,7 @@
    "title": "Coffee India Mein Chori Se Aayi Thi! 😳☕ #shorts",
    "published": "2026-11-16T12:00:04Z",
    "thumb": "https://i.ytimg.com/vi/zXBwvOncvk4/mqdefault.jpg",
-   "views": 181,
+   "views": 182,
    "likes": 4,
    "comments": 0
   },
@@ -52,7 +52,7 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 322,
+   "views": 324,
    "likes": 6,
    "comments": 0
   },
@@ -162,7 +162,7 @@
      "comments": 0
     },
     "2026-11-19": {
-     "views": 322,
+     "views": 324,
      "likes": 6,
      "comments": 0
     }
@@ -190,7 +190,7 @@
      "comments": 0
     },
     "2026-11-19": {
-     "views": 181,
+     "views": 182,
      "likes": 4,
      "comments": 0
     }
@@ -231,7 +231,7 @@
      "comments": 0
     },
     "2026-11-19": {
-     "views": 384,
+     "views": 388,
      "likes": 3,
      "comments": 0
     }
@@ -244,8 +244,8 @@
    "published": "2026-11-19T12:00:08Z",
    "daily": {
     "2026-11-19": {
-     "views": 89,
-     "likes": 0,
+     "views": 93,
+     "likes": 1,
      "comments": 0
     }
    },
