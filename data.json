@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T16:49:45.030Z",
+ "updatedAt": "2026-11-21T17:27:46.793Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 2662,
+  "views": 2670,
   "videos": 8
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Shark Pedon Se Bhi Purane Hain! 🦈🌳 #shorts",
    "published": "2026-11-21T12:00:39Z",
    "thumb": "https://i.ytimg.com/vi/27UxyyFHlxI/mqdefault.jpg",
-   "views": 41,
+   "views": 39,
    "likes": 3,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Shahad Kabhi Kharab Kyun Nahi Hota? 🍯 #shorts",
    "published": "2026-11-20T12:00:20Z",
    "thumb": "https://i.ytimg.com/vi/EtvCbh3AZNI/mqdefault.jpg",
-   "views": 38,
+   "views": 40,
    "likes": 2,
    "comments": 0
   },
@@ -127,7 +127,7 @@
   },
   "2026-11-21": {
    "subs": 5,
-   "views": 2662,
+   "views": 2670,
    "videos": 8
   }
  },
@@ -350,7 +350,7 @@
      "comments": 0
     },
     "2026-11-21": {
-     "views": 38,
+     "views": 40,
      "likes": 2,
      "comments": 0
     }
@@ -363,7 +363,7 @@
    "published": "2026-11-21T12:00:39Z",
    "daily": {
     "2026-11-21": {
-     "views": 41,
+     "views": 39,
      "likes": 3,
      "comments": 0
     }
