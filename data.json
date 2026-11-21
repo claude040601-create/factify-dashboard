@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T18:09:52.388Z",
+ "updatedAt": "2026-11-21T18:55:56.388Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,7 +16,7 @@
    "title": "Shark Pedon Se Bhi Purane Hain! 🦈🌳 #shorts",
    "published": "2026-11-21T12:00:39Z",
    "thumb": "https://i.ytimg.com/vi/27UxyyFHlxI/mqdefault.jpg",
-   "views": 41,
+   "views": 55,
    "likes": 3,
    "comments": 0
   },
@@ -43,7 +43,7 @@
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
    "published": "2026-11-18T12:00:25Z",
    "thumb": "https://i.ytimg.com/vi/LkzW5o9JwPw/mqdefault.jpg",
-   "views": 410,
+   "views": 414,
    "likes": 3,
    "comments": 0
   },
@@ -129,6 +129,11 @@
    "subs": 5,
    "views": 2670,
    "videos": 8
+  },
+  "2026-11-22": {
+   "subs": 5,
+   "views": 2670,
+   "videos": 8
   }
  },
  "videoHistory": {
@@ -167,6 +172,11 @@
      "comments": 2
     },
     "2026-11-21": {
+     "views": 1072,
+     "likes": 20,
+     "comments": 2
+    },
+    "2026-11-22": {
      "views": 1072,
      "likes": 20,
      "comments": 2
@@ -213,6 +223,11 @@
      "views": 326,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 326,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -251,6 +266,11 @@
      "views": 189,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 189,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -284,6 +304,11 @@
      "views": 563,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 563,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -312,6 +337,11 @@
      "views": 410,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 414,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 376,
@@ -335,6 +365,11 @@
      "views": 112,
      "likes": 1,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 112,
+     "likes": 1,
+     "comments": 0
     }
    },
    "first24": 104,
@@ -353,6 +388,11 @@
      "views": 38,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-22": {
+     "views": 38,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 40,
@@ -364,6 +404,11 @@
    "daily": {
     "2026-11-21": {
      "views": 41,
+     "likes": 3,
+     "comments": 0
+    },
+    "2026-11-22": {
+     "views": 55,
      "likes": 3,
      "comments": 0
     }
