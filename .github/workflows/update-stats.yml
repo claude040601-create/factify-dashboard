@@ -1,35 +1,41 @@
 name: Update channel stats
 on:
   schedule:
-    - cron: '*/10 * * * *'   # every 10 minutes
+    - cron: '*/10 * * * *'   # GitHub starts this late (often 45-70 min), so each run keeps going for ~1 hour
   workflow_dispatch:         # lets you run it manually
 permissions:
   contents: write
 concurrency:
   group: data-writes
-  cancel-in-progress: false
+  cancel-in-progress: false  # the next run waits in line and takes over when this one ends
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: YouTube stats
-        run: node scripts/fetch-stats.mjs
+      - name: Fetch stats every 10 minutes for about an hour
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
           YT_HANDLE: ${{ vars.YT_HANDLE }}
-      - name: Instagram stats
-        run: node scripts/fetch-instagram.mjs
-        continue-on-error: true      # a problem with Instagram never blocks the YouTube update
-        env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-      - name: Save data
         run: |
           git config user.name "stats-bot"
           git config user.email "stats-bot@users.noreply.github.com"
-          git add data.json
-          if [ -f data-ig.json ]; then git add data-ig.json; fi
-          git diff --staged --quiet || (git commit -m "Update stats" && git pull --rebase && git push)
+          for i in 1 2 3 4 5 6; do
+            echo "::group::Round $i ($(TZ=Asia/Kolkata date +%H:%M) IST)"
+            git pull --rebase --quiet || true
+            node scripts/fetch-stats.mjs || echo "YouTube fetch failed this round"
+            node scripts/fetch-instagram.mjs || echo "Instagram fetch failed this round"   # never blocks YouTube
+            git add data.json
+            if [ -f data-ig.json ]; then git add data-ig.json; fi
+            if ! git diff --staged --quiet; then
+              git commit -m "Update stats" --quiet
+              git pull --rebase --quiet && git push --quiet || echo "Push failed this round"
+            fi
+            echo "::endgroup::"
+            if [ "$i" -lt 6 ]; then sleep 600; fi
+          done
