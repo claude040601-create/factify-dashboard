@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T16:18:27.415Z",
+ "updatedAt": "2026-11-22T16:28:29.991Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 7,
-  "views": 2682,
+  "views": 2730,
   "videos": 9
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
    "published": "2026-11-22T13:45:11Z",
    "thumb": "https://i.ytimg.com/vi/TTjXFi0PJpA/mqdefault.jpg",
-   "views": 62,
+   "views": 59,
    "likes": 3,
    "comments": 0
   },
@@ -34,7 +34,7 @@
    "title": "Shahad Kabhi Kharab Kyun Nahi Hota? 🍯 #shorts",
    "published": "2026-11-20T12:00:20Z",
    "thumb": "https://i.ytimg.com/vi/EtvCbh3AZNI/mqdefault.jpg",
-   "views": 39,
+   "views": 40,
    "likes": 2,
    "comments": 0
   },
@@ -43,7 +43,7 @@
    "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
    "published": "2026-11-19T12:00:08Z",
    "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
-   "views": 113,
+   "views": 114,
    "likes": 1,
    "comments": 0
   },
@@ -52,7 +52,7 @@
    "title": "Ketchup Pehle DAWAI Thi?! 💊🍅 #shorts",
    "published": "2026-11-18T12:00:25Z",
    "thumb": "https://i.ytimg.com/vi/LkzW5o9JwPw/mqdefault.jpg",
-   "views": 422,
+   "views": 420,
    "likes": 3,
    "comments": 0
   },
@@ -141,7 +141,7 @@
   },
   "2026-11-22": {
    "subs": 7,
-   "views": 2682,
+   "views": 2730,
    "videos": 9
   }
  },
@@ -348,7 +348,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 422,
+     "views": 420,
      "likes": 3,
      "comments": 0
     }
@@ -376,7 +376,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 113,
+     "views": 114,
      "likes": 1,
      "comments": 0
     }
@@ -399,7 +399,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 39,
+     "views": 40,
      "likes": 2,
      "comments": 0
     }
@@ -430,7 +430,7 @@
    "published": "2026-11-22T13:45:11Z",
    "daily": {
     "2026-11-22": {
-     "views": 62,
+     "views": 59,
      "likes": 3,
      "comments": 0
     }
