@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T11:02:13.838Z",
+ "updatedAt": "2026-11-22T11:47:00.427Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 5,
-  "views": 2682,
+  "views": 2670,
   "videos": 8
  },
  "videos": [
@@ -34,7 +34,7 @@
    "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
    "published": "2026-11-19T12:00:08Z",
    "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
-   "views": 112,
+   "views": 113,
    "likes": 1,
    "comments": 0
   },
@@ -52,7 +52,7 @@
    "title": "Jeans Ki Chhoti Pocket Kis Liye Hai? 👖🤔 #shorts",
    "published": "2026-11-17T12:00:33Z",
    "thumb": "https://i.ytimg.com/vi/z_srJugzV8M/mqdefault.jpg",
-   "views": 562,
+   "views": 564,
    "likes": 6,
    "comments": 0
   },
@@ -70,7 +70,7 @@
    "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
    "published": "2026-11-15T12:00:11Z",
    "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 327,
+   "views": 328,
    "likes": 6,
    "comments": 0
   },
@@ -132,7 +132,7 @@
   },
   "2026-11-22": {
    "subs": 5,
-   "views": 2682,
+   "views": 2670,
    "videos": 8
   }
  },
@@ -225,7 +225,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 327,
+     "views": 328,
      "likes": 6,
      "comments": 0
     }
@@ -306,7 +306,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 562,
+     "views": 564,
      "likes": 6,
      "comments": 0
     }
@@ -367,7 +367,7 @@
      "comments": 0
     },
     "2026-11-22": {
-     "views": 112,
+     "views": 113,
      "likes": 1,
      "comments": 0
     }
