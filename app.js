@@ -8,7 +8,7 @@ const dshort = iso => new Date(iso).toLocaleDateString('en-IN', {day: 'numeric',
 let yt = null, ig = null, chart;
 const store = (k, d) => { try { return localStorage.getItem(k) || d; } catch(e){ return d; } };
 const save = (k, v) => { try { localStorage.setItem(k, v); } catch(e){} };
-let feed = store('fh_feed', 'yt'), show = store('fh_show', 'both');
+let feed = store('fh_feed', 'yt'), show = store('fh_show', 'both'), perfSrc = store('fh_perf', 'yt');
 
 const istNow = () => new Date(Date.now() + 5.5 * 3600e3);
 const daysAgo = d => new Date(istNow() - d * DAY).toISOString().slice(0, 10);
@@ -43,7 +43,7 @@ async function load(){
     $('iglD').innerHTML = delta(s.likes, past(ig.history, 'likes', 1));
     if (ig.account && ig.account.username) $('igLink').href = 'https://www.instagram.com/' + ig.account.username + '/';
   }
-  for (const f of [renderPosts, drawChart, renderWeek, renderPerf, renderMiles, renderCal, warnings]) { try { f(); } catch(e){ console.error(f.name, e); } }
+  for (const f of [renderPosts, drawChart, renderWeek, renderPerf, renderMiles, renderCal, renderBest, warnings]) { try { f(); } catch(e){ console.error(f.name, e); } }
   const t = [yt && yt.updatedAt, ig && ig.updatedAt].filter(Boolean).sort().pop();
   const txt = t ? 'Updated ' + ago(t) : 'No data yet — run the GitHub Action once';
   $('updated').innerHTML = (t ? '<span class="live"></span>' : '') + txt;
@@ -159,6 +159,8 @@ function spark(vals){
   return `<svg class="spark" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>`;
 }
 function renderPerf(){
+  document.querySelectorAll('[data-perf]').forEach(b => b.setAttribute('aria-pressed', b.dataset.perf === perfSrc));
+  if (perfSrc === 'ig') return renderPerfIG();
   const box = $('perf'), vids = (yt && yt.videos) || [], vh = (yt && yt.videoHistory) || {};
   if (!vids.length){ box.innerHTML = '<div class="empty">Your Shorts will show up here once they go live.</div>'; return; }
   const rows = vids.map(v => {
@@ -178,6 +180,51 @@ function renderPerf(){
     `</tbody></table><p class="perf-note">Engagement = (likes + comments) ÷ views. Green means above 5%, which is strong for Shorts.</p>`;
 }
 
+function renderPerfIG(){
+  const box = $('perf'), media = ((ig && ig.media) || []).filter(m => m.type === 'REELS' || m.type === 'VIDEO' || m.views != null), mh = (ig && ig.mediaHistory) || {};
+  if (!media.length){ box.innerHTML = '<div class="empty">Your Reels will show up here once they go live.</div>'; return; }
+  const hasViews = media.some(m => m.views != null);
+  const rows = media.map(m => {
+    const h = mh[m.id] || {}, days = Object.keys(h.daily || {}).sort();
+    const inter = (m.likes || 0) + (m.comments || 0) + (m.saves || 0) + (m.shares || 0);
+    return {m, eng: m.views ? inter / m.views * 100 : null, sp: spark(days.map(d => h.daily[d].views))};
+  }).sort((a, b) => (b.m.views ?? b.m.likes ?? 0) - (a.m.views ?? a.m.likes ?? 0));
+  box.innerHTML = `<table class="perf"><thead><tr><th>Reel</th><th>Views</th><th class="hide-m">Reach</th><th>${hasViews ? 'Engagement' : 'Likes'}</th><th class="hide-m">Trend</th></tr></thead><tbody>` +
+    rows.map(r => `<tr>
+      <td><a class="tt" href="${r.m.url}" target="_blank" rel="noopener">${r.m.thumb ? `<img src="${r.m.thumb}" alt="">` : '<span class="ph"></span>'}
+        <span class="name"><span>${esc(r.m.caption || 'Reel')}</span><small>${dshort(r.m.published)}</small></span></a></td>
+      <td>${fmt(r.m.views)}</td><td class="hide-m">${fmt(r.m.reach)}</td>
+      <td>${hasViews ? (r.eng == null ? '—' : `<span class="chip${r.eng < 5 ? ' mid' : ''}">${r.eng.toFixed(1)}%</span>`) : fmt(r.m.likes)}</td>
+      <td class="hide-m">${r.sp}</td></tr>`).join('') + '</tbody></table>' +
+    (hasViews ? '<p class="perf-note">Engagement = (likes + comments + saves + shares) ÷ views. Reach = how many different accounts saw it.</p>'
+              : '<p class="perf-note">Reel views and reach need one extra Instagram permission. Until then this shows likes only.</p>');
+}
+document.querySelectorAll('[data-perf]').forEach(b => b.onclick = () => { perfSrc = b.dataset.perf; save('fh_perf', perfSrc); renderPerf(); });
+
+/* ---------- Best time to post ---------- */
+const median = a => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+const slotOf = iso => { const t = new Date(new Date(iso).getTime() + 5.5 * 3600e3); let mins = Math.round((t.getUTCHours() * 60 + t.getUTCMinutes()) / 15) * 15; return mins % 1440; };
+const slotLabel = m => { const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, '0'); return `${h % 12 || 12}:${mm} ${h < 12 ? 'AM' : 'PM'}`; };
+function bestBlock(title, cls, items){
+  const slots = {};
+  items.forEach(x => (slots[slotOf(x.published)] = slots[slotOf(x.published)] || []).push(x.v));
+  const rows = Object.entries(slots).map(([k, v]) => ({k: +k, n: v.length, med: median(v)})).sort((a, b) => a.k - b.k);
+  if (!rows.length) return `<div class="bt ${cls}"><h3><span class="dot ${cls}"></span>${title}</h3><div class="empty">No first-day numbers yet. They appear 24 hours after each upload.</div></div>`;
+  const reliable = rows.filter(r => r.n >= 3), top = Math.max(...rows.map(r => r.med)) || 1;
+  const win = reliable.length >= 2 ? reliable.reduce((a, b) => b.med > a.med ? b : a) : null;
+  return `<div class="bt ${cls}"><h3><span class="dot ${cls}"></span>${title}</h3>` + rows.map(r => `
+    <div class="bt-row"><span class="bt-t">${slotLabel(r.k)}</span><span class="bt-bar"><i style="width:${Math.max(4, r.med / top * 100)}%"></i></span>
+      <span class="bt-v"><b>${fmt(Math.round(r.med))}</b>${win && win.k === r.k ? '<span class="bt-win">Best</span>' : ''}<small>${r.n} upload${r.n === 1 ? '' : 's'}${r.n < 3 ? ' · need ' + (3 - r.n) + ' more' : ''}</small></span></div>`).join('') + '</div>';
+}
+function renderBest(){
+  const vh = (yt && yt.videoHistory) || {};
+  const ytItems = ((yt && yt.videos) || []).map(v => ({published: v.published, v: vh[v.id] && vh[v.id].first24})).filter(x => x.v != null);
+  const mh = (ig && ig.mediaHistory) || {};
+  const igItems = Object.values(mh).filter(h => h.first24 != null).map(h => ({published: h.published, v: h.first24}));
+  $('best').innerHTML = bestBlock('YouTube Shorts', 'yt', ytItems) + bestBlock('Instagram Reels', 'ig', igItems) +
+    '<p class="bt-note" style="grid-column:1/-1">Each bar is the typical (middle) first-day views for uploads at that time, so one viral video can\'t skew it. A time needs at least 3 uploads before it can be called Best. Your hook still matters more than the clock.</p>';
+}
+
 /* ---------- Latest posts ---------- */
 function renderPosts(){
   document.querySelectorAll('[data-feed]').forEach(b => b.setAttribute('aria-pressed', b.dataset.feed === feed));
@@ -185,7 +232,7 @@ function renderPosts(){
   if (feed === 'yt') items = ((yt && yt.videos) || []).map(v => ({url: 'https://youtube.com/watch?v=' + v.id, thumb: v.thumb, title: v.title, date: v.published,
     meta: `${fmt(v.views)} views · ${fmt(v.likes)} likes · ${fmt(v.comments)} comments`}));
   else items = ((ig && ig.media) || []).map(m => ({url: m.url, thumb: m.thumb, title: m.caption || (m.type === 'REELS' ? 'Reel' : 'Post'), date: m.published,
-    meta: `${m.likes != null ? fmt(m.likes) + ' likes · ' : ''}${fmt(m.comments || 0)} comments`}));
+    meta: `${m.views != null ? fmt(m.views) + ' views · ' : ''}${m.likes != null ? fmt(m.likes) + ' likes · ' : ''}${fmt(m.comments || 0)} comments`}));
   items.sort((a, b) => new Date(b.date) - new Date(a.date));
   const empty = feed === 'yt' ? 'No Shorts yet — your first upload will show up here.' : (ig ? 'No Reels yet — your first post will show up here.' : 'Connect Instagram to see your Reels here.');
   $('vids').innerHTML = items.length ? items.slice(0, 12).map(x => `
@@ -231,6 +278,9 @@ function warnings(){
   if (ig && ig.updatedAt && Date.now() - new Date(ig.updatedAt) > 2 * DAY) msgs.push('Instagram stats haven’t updated for 2+ days — the key may have expired.');
   w.hidden = !msgs.length; w.textContent = msgs.join(' ');
 }
+
+/* Instagram picture links expire after a while: swap a broken picture for a plain box */
+document.addEventListener('error', e => { const t = e.target; if (t.tagName === 'IMG' && !t.dataset.dead){ t.dataset.dead = 1; const ph = document.createElement('span'); ph.className = 'ph'; t.replaceWith(ph); } }, true);
 
 $('refreshBtn').onclick = load;
 load();
