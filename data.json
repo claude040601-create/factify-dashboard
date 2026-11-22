@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T13:37:38.175Z",
+ "updatedAt": "2026-11-22T14:15:59.420Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,9 +8,18 @@
  "latest": {
   "subs": 6,
   "views": 2682,
-  "videos": 8
+  "videos": 9
  },
  "videos": [
+  {
+   "id": "TTjXFi0PJpA",
+   "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
+   "published": "2026-11-22T13:45:11Z",
+   "thumb": "https://i.ytimg.com/vi/TTjXFi0PJpA/mqdefault.jpg",
+   "views": 37,
+   "likes": 2,
+   "comments": 0
+  },
   {
    "id": "27UxyyFHlxI",
    "title": "Shark Pedon Se Bhi Purane Hain! 🦈🌳 #shorts",
@@ -133,7 +142,7 @@
   "2026-11-22": {
    "subs": 6,
    "views": 2682,
-   "videos": 8
+   "videos": 9
   }
  },
  "videoHistory": {
@@ -414,6 +423,19 @@
     }
    },
    "first24": 59,
+   "first24Missed": false
+  },
+  "TTjXFi0PJpA": {
+   "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
+   "published": "2026-11-22T13:45:11Z",
+   "daily": {
+    "2026-11-22": {
+     "views": 37,
+     "likes": 2,
+     "comments": 0
+    }
+   },
+   "first24": null,
    "first24Missed": false
   }
  }
