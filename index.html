@@ -47,7 +47,8 @@
 
 <section class="grid g-cal">
   <div class="card"><div class="sh"><h2>Upload calendar</h2><span class="sub" id="calSub"></span></div><div id="cal"><div class="empty">Loading…</div></div></div>
-  <div class="card"><div class="sh"><h2>Video performance</h2><span class="sub">YouTube Shorts, by views</span></div><div id="perf"><div class="empty">Loading…</div></div></div>
+  <div class="card"><div class="sh"><h2>Video performance</h2>
+    <div class="seg" role="group" aria-label="Choose platform"><button type="button" data-perf="yt">YouTube</button><button type="button" data-perf="ig">Instagram</button></div></div><div id="perf"><div class="empty">Loading…</div></div></div>
 </section>
 
 <section class="grid g-feed">
@@ -55,6 +56,11 @@
     <div class="seg" role="group" aria-label="Choose platform"><button type="button" data-feed="yt">YouTube</button><button type="button" data-feed="ig">Instagram</button></div></div>
     <div class="vids" id="vids"><div class="empty">Loading…</div></div></div>
   <div class="card"><div class="sh"><h2>This week</h2><span class="sub" id="weekSub"></span></div><div id="week"><div class="empty">Loading…</div></div></div>
+</section>
+
+<section class="card best">
+  <div class="sh"><h2>Best time to post</h2><span class="sub">Typical views in the first 24 hours, by upload time</span></div>
+  <div id="best" class="best-g"><div class="empty">Loading…</div></div>
 </section>
 
 <footer><span id="updated2"></span> Refreshes every 10 minutes · YouTube rounds public subscriber counts · Instagram likes = latest 12 posts</footer>
