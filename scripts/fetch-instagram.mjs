@@ -41,18 +41,54 @@ try {
   }));
 } catch (e) { console.log('Could not read posts:', e.message); }
 
+// Reel views and reach (needs the instagram_manage_insights permission on the key).
+// Meta renames metrics now and then, so try the full set first, then smaller ones.
+let insightsNote = null;
+const METRIC_SETS = ['views,reach,saved,shares,total_interactions', 'views,reach', 'views', 'reach'];
+let workingSet = null;
+for (const x of media) {
+  for (const set of (workingSet ? [workingSet] : METRIC_SETS)) {
+    try {
+      const r = await call(base, x.id + '/insights', {metric: set});
+      for (const m of r.data || []) {
+        const v = m.values && m.values[0] ? m.values[0].value : (m.total_value ? m.total_value.value : null);
+        if (m.name === 'views') x.views = v;
+        if (m.name === 'reach') x.reach = v;
+        if (m.name === 'saved') x.saves = v;
+        if (m.name === 'shares') x.shares = v;
+      }
+      workingSet = set; insightsNote = null; break;
+    } catch (e) { insightsNote = e.message; }
+  }
+}
+if (insightsNote) console.log('Reel views not available:', insightsNote);
+
 let old = { history: {} };
 try { old = JSON.parse(fs.readFileSync('data-ig.json', 'utf8')); } catch {}
 old.history = old.history || {};
 const day = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);   // India date
 const latest = { followers: me.followers_count ?? null, following: me.follows_count ?? null, posts: me.media_count ?? null };
 latest.likes = media.reduce((a, x) => a + (x.likes || 0), 0);      // total likes on the latest 12 posts
-old.history[day] = { followers: latest.followers, posts: latest.posts, likes: latest.likes };
+latest.views = media.some(x => x.views != null) ? media.reduce((a, x) => a + (x.views || 0), 0) : null;
+old.history[day] = { followers: latest.followers, posts: latest.posts, likes: latest.likes, views: latest.views };
+
+// per-Reel history: daily numbers + views 24 hours after posting (for the best-time panel)
+const mh = old.mediaHistory || {};
+for (const x of media) {
+  const h = mh[x.id] || (mh[x.id] = { published: x.published, daily: {}, first24: null, first24Missed: false });
+  h.daily[day] = { views: x.views ?? null, likes: x.likes, comments: x.comments };
+  const ageH = (Date.now() - new Date(x.published)) / 3600e3;
+  if (h.first24 == null && !h.first24Missed && x.views != null) {
+    if (ageH >= 24 && ageH < 30) h.first24 = x.views;
+    else if (ageH >= 30) h.first24Missed = true;
+  }
+}
 
 fs.writeFileSync('data-ig.json', JSON.stringify({
   updatedAt: new Date().toISOString(),
   account: { username: me.username, avatar: me.profile_picture_url || '' },
-  latest, media, history: old.history,
+  latest, media, history: old.history, mediaHistory: mh,
+  insights: insightsNote ? { ok: false, note: insightsNote } : { ok: true },
   token: old.token || null          // expiry info written by the weekly refresh job (never the key itself)
 }, null, 1));
 console.log('Instagram updated', day, latest);
