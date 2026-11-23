@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T07:50:31.966Z",
+ "updatedAt": "2026-11-23T08:00:34.473Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,7 +8,7 @@
  "latest": {
   "subs": 7,
   "views": 2730,
-  "videos": 7
+  "videos": 9
  },
  "videos": [
   {
@@ -147,7 +147,7 @@
   "2026-11-23": {
    "subs": 7,
    "views": 2730,
-   "videos": 7
+   "videos": 9
   }
  },
  "videoHistory": {
