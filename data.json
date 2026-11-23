@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T18:23:06.956Z",
+ "updatedAt": "2026-11-23T18:33:10.085Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -157,6 +157,11 @@
    "subs": 7,
    "views": 2730,
    "videos": 10
+  },
+  "2026-11-24": {
+   "subs": 7,
+   "views": 2730,
+   "videos": 10
   }
  },
  "videoHistory": {
@@ -205,6 +210,11 @@
      "comments": 2
     },
     "2026-11-23": {
+     "views": 1073,
+     "likes": 20,
+     "comments": 2
+    },
+    "2026-11-24": {
      "views": 1073,
      "likes": 20,
      "comments": 2
@@ -261,6 +271,11 @@
      "views": 328,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 328,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -309,6 +324,11 @@
      "views": 192,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 192,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -352,6 +372,11 @@
      "views": 564,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 564,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -390,6 +415,11 @@
      "views": 420,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 420,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 376,
@@ -423,6 +453,11 @@
      "views": 114,
      "likes": 1,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 114,
+     "likes": 1,
+     "comments": 0
     }
    },
    "first24": 104,
@@ -451,6 +486,11 @@
      "views": 40,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 40,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 40,
@@ -474,6 +514,11 @@
      "views": 97,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 97,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 59,
@@ -492,6 +537,11 @@
      "views": 169,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-24": {
+     "views": 169,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 123,
@@ -502,6 +552,11 @@
    "published": "2026-11-23T13:45:18Z",
    "daily": {
     "2026-11-23": {
+     "views": 105,
+     "likes": 0,
+     "comments": 0
+    },
+    "2026-11-24": {
      "views": 105,
      "likes": 0,
      "comments": 0
