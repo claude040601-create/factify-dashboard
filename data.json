@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T06:27:09.061Z",
+ "updatedAt": "2026-11-23T06:37:11.569Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,7 +8,7 @@
  "latest": {
   "subs": 7,
   "views": 2730,
-  "videos": 7
+  "videos": 9
  },
  "videos": [
   {
@@ -16,7 +16,7 @@
    "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
    "published": "2026-11-22T13:45:11Z",
    "thumb": "https://i.ytimg.com/vi/TTjXFi0PJpA/mqdefault.jpg",
-   "views": 115,
+   "views": 117,
    "likes": 3,
    "comments": 0
   },
@@ -147,7 +147,7 @@
   "2026-11-23": {
    "subs": 7,
    "views": 2730,
-   "videos": 7
+   "videos": 9
   }
  },
  "videoHistory": {
@@ -480,7 +480,7 @@
      "comments": 0
     },
     "2026-11-23": {
-     "views": 115,
+     "views": 117,
      "likes": 3,
      "comments": 0
     }
