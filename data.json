@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T16:20:15.149Z",
+ "updatedAt": "2026-11-24T16:39:58.030Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 8,
-  "views": 3132,
+  "views": 3120,
   "videos": 11
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
    "published": "2026-11-24T13:45:21Z",
    "thumb": "https://i.ytimg.com/vi/55qA7E5E-Ok/mqdefault.jpg",
-   "views": 224,
+   "views": 225,
    "likes": 4,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Flamingo Gulabi Paida Nahi Hote! 🦩 #shorts",
    "published": "2026-11-23T13:45:18Z",
    "thumb": "https://i.ytimg.com/vi/hfOUDo46btk/mqdefault.jpg",
-   "views": 112,
+   "views": 110,
    "likes": 1,
    "comments": 0
   },
@@ -34,7 +34,7 @@
    "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
    "published": "2026-11-22T13:45:11Z",
    "thumb": "https://i.ytimg.com/vi/TTjXFi0PJpA/mqdefault.jpg",
-   "views": 202,
+   "views": 203,
    "likes": 3,
    "comments": 0
   },
@@ -169,7 +169,7 @@
   },
   "2026-11-24": {
    "subs": 8,
-   "views": 3132,
+   "views": 3120,
    "videos": 11
   }
  },
@@ -548,7 +548,7 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 202,
+     "views": 203,
      "likes": 3,
      "comments": 0
     }
@@ -566,7 +566,7 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 112,
+     "views": 110,
      "likes": 1,
      "comments": 0
     }
@@ -579,7 +579,7 @@
    "published": "2026-11-24T13:45:21Z",
    "daily": {
     "2026-11-24": {
-     "views": 224,
+     "views": 225,
      "likes": 4,
      "comments": 0
     }
