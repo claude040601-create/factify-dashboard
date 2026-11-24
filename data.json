@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T11:09:06.211Z",
+ "updatedAt": "2026-11-24T11:19:08.951Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -17,7 +17,7 @@
    "published": "2026-11-23T13:45:18Z",
    "thumb": "https://i.ytimg.com/vi/hfOUDo46btk/mqdefault.jpg",
    "views": 110,
-   "likes": 0,
+   "likes": 1,
    "comments": 0
   },
   {
@@ -558,7 +558,7 @@
     },
     "2026-11-24": {
      "views": 110,
-     "likes": 0,
+     "likes": 1,
      "comments": 0
     }
    },
