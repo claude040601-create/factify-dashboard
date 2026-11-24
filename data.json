@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T13:40:18.804Z",
+ "updatedAt": "2026-11-24T13:50:21.237Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,15 +8,24 @@
  "latest": {
   "subs": 7,
   "views": 3120,
-  "videos": 10
+  "videos": 11
  },
  "videos": [
+  {
+   "id": "55qA7E5E-Ok",
+   "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
+   "published": "2026-11-24T13:45:21Z",
+   "thumb": "https://i.ytimg.com/vi/55qA7E5E-Ok/mqdefault.jpg",
+   "views": 15,
+   "likes": 0,
+   "comments": 0
+  },
   {
    "id": "hfOUDo46btk",
    "title": "Flamingo Gulabi Paida Nahi Hote! 🦩 #shorts",
    "published": "2026-11-23T13:45:18Z",
    "thumb": "https://i.ytimg.com/vi/hfOUDo46btk/mqdefault.jpg",
-   "views": 110,
+   "views": 112,
    "likes": 1,
    "comments": 0
   },
@@ -25,7 +34,7 @@
    "title": "Shampoo Ek Hindi Shabd Hai! 🧴🇮🇳 #shorts",
    "published": "2026-11-22T13:45:11Z",
    "thumb": "https://i.ytimg.com/vi/TTjXFi0PJpA/mqdefault.jpg",
-   "views": 199,
+   "views": 191,
    "likes": 3,
    "comments": 0
   },
@@ -52,7 +61,7 @@
    "title": "Octopus Ke 3 Dil Aur Neela Khoon! 🐙💙 #shorts",
    "published": "2026-11-19T12:00:08Z",
    "thumb": "https://i.ytimg.com/vi/JnH_DRjML1E/mqdefault.jpg",
-   "views": 115,
+   "views": 114,
    "likes": 1,
    "comments": 0
   },
@@ -161,7 +170,7 @@
   "2026-11-24": {
    "subs": 7,
    "views": 3120,
-   "videos": 10
+   "videos": 11
   }
  },
  "videoHistory": {
@@ -455,7 +464,7 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 115,
+     "views": 114,
      "likes": 1,
      "comments": 0
     }
@@ -539,7 +548,7 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 199,
+     "views": 191,
      "likes": 3,
      "comments": 0
     }
@@ -557,8 +566,21 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 110,
+     "views": 112,
      "likes": 1,
+     "comments": 0
+    }
+   },
+   "first24": 112,
+   "first24Missed": false
+  },
+  "55qA7E5E-Ok": {
+   "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
+   "published": "2026-11-24T13:45:21Z",
+   "daily": {
+    "2026-11-24": {
+     "views": 15,
+     "likes": 0,
      "comments": 0
     }
    },
