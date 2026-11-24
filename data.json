@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T16:39:58.030Z",
+ "updatedAt": "2026-11-24T16:50:01.015Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 8,
-  "views": 3120,
+  "views": 3132,
   "videos": 11
  },
  "videos": [
@@ -25,7 +25,7 @@
    "title": "Flamingo Gulabi Paida Nahi Hote! 🦩 #shorts",
    "published": "2026-11-23T13:45:18Z",
    "thumb": "https://i.ytimg.com/vi/hfOUDo46btk/mqdefault.jpg",
-   "views": 110,
+   "views": 112,
    "likes": 1,
    "comments": 0
   },
@@ -169,7 +169,7 @@
   },
   "2026-11-24": {
    "subs": 8,
-   "views": 3120,
+   "views": 3132,
    "videos": 11
   }
  },
@@ -566,7 +566,7 @@
      "comments": 0
     },
     "2026-11-24": {
-     "views": 110,
+     "views": 112,
      "likes": 1,
      "comments": 0
     }
