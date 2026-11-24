@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-24T17:00:04.058Z",
+ "updatedAt": "2026-11-24T17:10:07.065Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
   "avatar": "https://yt3.ggpht.com/p87bDmNZPgXyxG9EsRhJk-DqDShEqPMOZiboIRdpEY2dzvW_ezZ28LfHby8za4EuXYx9NsOwTwo=s240-c-k-c0x00ffffff-no-rj"
  },
  "latest": {
-  "subs": 8,
-  "views": 3120,
+  "subs": 7,
+  "views": 3132,
   "videos": 11
  },
  "videos": [
@@ -16,8 +16,8 @@
    "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
    "published": "2026-11-24T13:45:21Z",
    "thumb": "https://i.ytimg.com/vi/55qA7E5E-Ok/mqdefault.jpg",
-   "views": 271,
-   "likes": 4,
+   "views": 304,
+   "likes": 3,
    "comments": 0
   },
   {
@@ -168,8 +168,8 @@
    "videos": 10
   },
   "2026-11-24": {
-   "subs": 8,
-   "views": 3120,
+   "subs": 7,
+   "views": 3132,
    "videos": 11
   }
  },
@@ -579,8 +579,8 @@
    "published": "2026-11-24T13:45:21Z",
    "daily": {
     "2026-11-24": {
-     "views": 271,
-     "likes": 4,
+     "views": 304,
+     "likes": 3,
      "comments": 0
     }
    },
