@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T19:07:40.398Z",
+ "updatedAt": "2026-11-25T19:14:21.997Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 8,
-  "views": 3562,
+  "views": 3546,
   "videos": 12
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Pehla Computer Bug Ek Asli Keeda Tha! 🐛💻 #shorts",
    "published": "2026-11-25T13:45:02Z",
    "thumb": "https://i.ytimg.com/vi/c54Hl5Kv5Z4/mqdefault.jpg",
-   "views": 302,
+   "views": 197,
    "likes": 4,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
    "published": "2026-11-24T13:45:21Z",
    "thumb": "https://i.ytimg.com/vi/55qA7E5E-Ok/mqdefault.jpg",
-   "views": 422,
+   "views": 419,
    "likes": 3,
    "comments": 0
   },
@@ -188,7 +188,7 @@
   },
   "2026-11-26": {
    "subs": 8,
-   "views": 3562,
+   "views": 3546,
    "videos": 12
   }
  },
@@ -708,7 +708,7 @@
      "comments": 0
     },
     "2026-11-26": {
-     "views": 422,
+     "views": 419,
      "likes": 3,
      "comments": 0
     }
@@ -726,7 +726,7 @@
      "comments": 0
     },
     "2026-11-26": {
-     "views": 302,
+     "views": 197,
      "likes": 4,
      "comments": 0
     }
