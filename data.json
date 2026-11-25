@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T14:52:43.221Z",
+ "updatedAt": "2026-11-25T15:02:47.088Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,8 +16,8 @@
    "title": "Pehla Computer Bug Ek Asli Keeda Tha! 🐛💻 #shorts",
    "published": "2026-11-25T13:45:02Z",
    "thumb": "https://i.ytimg.com/vi/c54Hl5Kv5Z4/mqdefault.jpg",
-   "views": 70,
-   "likes": 0,
+   "views": 120,
+   "likes": 2,
    "comments": 0
   },
   {
@@ -25,7 +25,7 @@
    "title": "Venus Par Suraj Pashchim Se Ugta Hai! 🪐🌅 #shorts",
    "published": "2026-11-24T13:45:21Z",
    "thumb": "https://i.ytimg.com/vi/55qA7E5E-Ok/mqdefault.jpg",
-   "views": 410,
+   "views": 409,
    "likes": 3,
    "comments": 0
   },
@@ -648,7 +648,7 @@
      "comments": 0
     },
     "2026-11-25": {
-     "views": 410,
+     "views": 409,
      "likes": 3,
      "comments": 0
     }
@@ -661,8 +661,8 @@
    "published": "2026-11-25T13:45:02Z",
    "daily": {
     "2026-11-25": {
-     "views": 70,
-     "likes": 0,
+     "views": 120,
+     "likes": 2,
      "comments": 0
     }
    },
