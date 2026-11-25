@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T18:27:29.472Z",
+ "updatedAt": "2026-11-25T18:37:32.399Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 8,
-  "views": 3546,
+  "views": 3562,
   "videos": 12
  },
  "videos": [
@@ -185,6 +185,11 @@
    "subs": 8,
    "views": 3546,
    "videos": 12
+  },
+  "2026-11-26": {
+   "subs": 8,
+   "views": 3562,
+   "videos": 12
   }
  },
  "videoHistory": {
@@ -243,6 +248,11 @@
      "comments": 2
     },
     "2026-11-25": {
+     "views": 1073,
+     "likes": 20,
+     "comments": 2
+    },
+    "2026-11-26": {
      "views": 1073,
      "likes": 20,
      "comments": 2
@@ -309,6 +319,11 @@
      "views": 328,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 328,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 295,
@@ -367,6 +382,11 @@
      "views": 194,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 194,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -420,6 +440,11 @@
      "views": 565,
      "likes": 6,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 565,
+     "likes": 6,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -468,6 +493,11 @@
      "views": 420,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 420,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 376,
@@ -511,6 +541,11 @@
      "views": 115,
      "likes": 1,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 115,
+     "likes": 1,
+     "comments": 0
     }
    },
    "first24": 104,
@@ -549,6 +584,11 @@
      "views": 40,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 40,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 40,
@@ -582,6 +622,11 @@
      "views": 97,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 97,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 59,
@@ -610,6 +655,11 @@
      "views": 206,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 206,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 123,
@@ -633,6 +683,11 @@
      "views": 116,
      "likes": 1,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 116,
+     "likes": 1,
+     "comments": 0
     }
    },
    "first24": 112,
@@ -651,6 +706,11 @@
      "views": 422,
      "likes": 3,
      "comments": 0
+    },
+    "2026-11-26": {
+     "views": 422,
+     "likes": 3,
+     "comments": 0
     }
    },
    "first24": 410,
@@ -661,6 +721,11 @@
    "published": "2026-11-25T13:45:02Z",
    "daily": {
     "2026-11-25": {
+     "views": 302,
+     "likes": 4,
+     "comments": 0
+    },
+    "2026-11-26": {
      "views": 302,
      "likes": 4,
      "comments": 0
