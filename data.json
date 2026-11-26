@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-26T13:54:33.103Z",
+ "updatedAt": "2026-11-26T14:04:36.473Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
   "avatar": "https://yt3.ggpht.com/p87bDmNZPgXyxG9EsRhJk-DqDShEqPMOZiboIRdpEY2dzvW_ezZ28LfHby8za4EuXYx9NsOwTwo=s240-c-k-c0x00ffffff-no-rj"
  },
  "latest": {
-  "subs": 8,
+  "subs": 9,
   "views": 3990,
   "videos": 13
  },
@@ -16,8 +16,8 @@
    "title": "Pet Khud Ko Kyun Nahi Pachata? 🧪🛡️ #shorts",
    "published": "2026-11-26T13:45:30Z",
    "thumb": "https://i.ytimg.com/vi/GWtJiDtE1oc/mqdefault.jpg",
-   "views": 37,
-   "likes": 3,
+   "views": 61,
+   "likes": 7,
    "comments": 0
   },
   {
@@ -25,7 +25,7 @@
    "title": "Pehla Computer Bug Ek Asli Keeda Tha! 🐛💻 #shorts",
    "published": "2026-11-25T13:45:02Z",
    "thumb": "https://i.ytimg.com/vi/c54Hl5Kv5Z4/mqdefault.jpg",
-   "views": 400,
+   "views": 399,
    "likes": 5,
    "comments": 0
   },
@@ -187,7 +187,7 @@
    "videos": 12
   },
   "2026-11-26": {
-   "subs": 8,
+   "subs": 9,
    "views": 3990,
    "videos": 13
   }
@@ -726,7 +726,7 @@
      "comments": 0
     },
     "2026-11-26": {
-     "views": 400,
+     "views": 399,
      "likes": 5,
      "comments": 0
     }
@@ -739,8 +739,8 @@
    "published": "2026-11-26T13:45:30Z",
    "daily": {
     "2026-11-26": {
-     "views": 37,
-     "likes": 3,
+     "views": 61,
+     "likes": 7,
      "comments": 0
     }
    },
