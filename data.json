@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T17:00:16.077Z",
+ "updatedAt": "2026-11-27T17:10:18.740Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 9,
-  "views": 4488,
+  "views": 4496,
   "videos": 14
  },
  "videos": [
@@ -16,7 +16,7 @@
    "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
    "published": "2026-11-27T13:45:38Z",
    "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
-   "views": 310,
+   "views": 321,
    "likes": 4,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Pet Khud Ko Kyun Nahi Pachata? 🧪🛡️ #shorts",
    "published": "2026-11-26T13:45:30Z",
    "thumb": "https://i.ytimg.com/vi/GWtJiDtE1oc/mqdefault.jpg",
-   "views": 465,
+   "views": 490,
    "likes": 8,
    "comments": 0
   },
@@ -193,7 +193,7 @@
   },
   "2026-11-27": {
    "subs": 9,
-   "views": 4488,
+   "views": 4496,
    "videos": 14
   }
  },
@@ -804,7 +804,7 @@
      "comments": 0
     },
     "2026-11-27": {
-     "views": 465,
+     "views": 490,
      "likes": 8,
      "comments": 0
     }
@@ -817,7 +817,7 @@
    "published": "2026-11-27T13:45:38Z",
    "daily": {
     "2026-11-27": {
-     "views": 310,
+     "views": 321,
      "likes": 4,
      "comments": 0
     }
