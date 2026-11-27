@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T13:56:15.893Z",
+ "updatedAt": "2026-11-27T14:06:19.171Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,7 +16,7 @@
    "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
    "published": "2026-11-27T13:45:38Z",
    "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
-   "views": 35,
+   "views": 64,
    "likes": 0,
    "comments": 0
   },
@@ -25,7 +25,7 @@
    "title": "Pet Khud Ko Kyun Nahi Pachata? 🧪🛡️ #shorts",
    "published": "2026-11-26T13:45:30Z",
    "thumb": "https://i.ytimg.com/vi/GWtJiDtE1oc/mqdefault.jpg",
-   "views": 454,
+   "views": 464,
    "likes": 8,
    "comments": 0
   },
@@ -34,7 +34,7 @@
    "title": "Pehla Computer Bug Ek Asli Keeda Tha! 🐛💻 #shorts",
    "published": "2026-11-25T13:45:02Z",
    "thumb": "https://i.ytimg.com/vi/c54Hl5Kv5Z4/mqdefault.jpg",
-   "views": 425,
+   "views": 427,
    "likes": 7,
    "comments": 0
   },
@@ -786,7 +786,7 @@
      "comments": 0
     },
     "2026-11-27": {
-     "views": 425,
+     "views": 427,
      "likes": 7,
      "comments": 0
     }
@@ -804,7 +804,7 @@
      "comments": 0
     },
     "2026-11-27": {
-     "views": 454,
+     "views": 464,
      "likes": 8,
      "comments": 0
     }
@@ -817,7 +817,7 @@
    "published": "2026-11-27T13:45:38Z",
    "daily": {
     "2026-11-27": {
-     "views": 35,
+     "views": 64,
      "likes": 0,
      "comments": 0
     }
