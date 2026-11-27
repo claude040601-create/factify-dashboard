@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T13:27:11.633Z",
+ "updatedAt": "2026-11-27T13:56:15.893Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -8,9 +8,18 @@
  "latest": {
   "subs": 9,
   "views": 4488,
-  "videos": 13
+  "videos": 14
  },
  "videos": [
+  {
+   "id": "oBRaNRECYDw",
+   "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
+   "published": "2026-11-27T13:45:38Z",
+   "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
+   "views": 35,
+   "likes": 0,
+   "comments": 0
+  },
   {
    "id": "GWtJiDtE1oc",
    "title": "Pet Khud Ko Kyun Nahi Pachata? 🧪🛡️ #shorts",
@@ -25,7 +34,7 @@
    "title": "Pehla Computer Bug Ek Asli Keeda Tha! 🐛💻 #shorts",
    "published": "2026-11-25T13:45:02Z",
    "thumb": "https://i.ytimg.com/vi/c54Hl5Kv5Z4/mqdefault.jpg",
-   "views": 427,
+   "views": 425,
    "likes": 7,
    "comments": 0
   },
@@ -109,15 +118,6 @@
    "views": 195,
    "likes": 4,
    "comments": 0
-  },
-  {
-   "id": "PIqoCmBWdDk",
-   "title": "Chai India Mein Kaise Aayi? ☕ Kahani Jo Koi Nahi Batata #shorts",
-   "published": "2026-11-15T12:00:11Z",
-   "thumb": "https://i.ytimg.com/vi/PIqoCmBWdDk/mqdefault.jpg",
-   "views": 329,
-   "likes": 6,
-   "comments": 0
   }
  ],
  "history": {
@@ -194,7 +194,7 @@
   "2026-11-27": {
    "subs": 9,
    "views": 4488,
-   "videos": 13
+   "videos": 14
   }
  },
  "videoHistory": {
@@ -786,7 +786,7 @@
      "comments": 0
     },
     "2026-11-27": {
-     "views": 427,
+     "views": 425,
      "likes": 7,
      "comments": 0
     }
@@ -806,6 +806,19 @@
     "2026-11-27": {
      "views": 454,
      "likes": 8,
+     "comments": 0
+    }
+   },
+   "first24": 454,
+   "first24Missed": false
+  },
+  "oBRaNRECYDw": {
+   "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
+   "published": "2026-11-27T13:45:38Z",
+   "daily": {
+    "2026-11-27": {
+     "views": 35,
+     "likes": 0,
      "comments": 0
     }
    },
