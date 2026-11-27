@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T18:28:03.536Z",
+ "updatedAt": "2026-11-27T18:38:05.761Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -16,7 +16,7 @@
    "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
    "published": "2026-11-27T13:45:38Z",
    "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
-   "views": 404,
+   "views": 407,
    "likes": 6,
    "comments": 0
   },
@@ -192,6 +192,11 @@
    "videos": 13
   },
   "2026-11-27": {
+   "subs": 9,
+   "views": 4496,
+   "videos": 14
+  },
+  "2026-11-28": {
    "subs": 9,
    "views": 4496,
    "videos": 14
@@ -402,6 +407,11 @@
      "views": 195,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 195,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 173,
@@ -465,6 +475,11 @@
      "views": 567,
      "likes": 7,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 567,
+     "likes": 7,
+     "comments": 0
     }
    },
    "first24": 527,
@@ -523,6 +538,11 @@
      "views": 421,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 421,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 376,
@@ -576,6 +596,11 @@
      "views": 117,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 117,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 104,
@@ -624,6 +649,11 @@
      "views": 41,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 41,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 40,
@@ -667,6 +697,11 @@
      "views": 98,
      "likes": 5,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 98,
+     "likes": 5,
+     "comments": 0
     }
    },
    "first24": 59,
@@ -705,6 +740,11 @@
      "views": 215,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 215,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 123,
@@ -738,6 +778,11 @@
      "views": 117,
      "likes": 2,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 117,
+     "likes": 2,
+     "comments": 0
     }
    },
    "first24": 112,
@@ -766,6 +811,11 @@
      "views": 445,
      "likes": 4,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 445,
+     "likes": 4,
+     "comments": 0
     }
    },
    "first24": 410,
@@ -789,6 +839,11 @@
      "views": 431,
      "likes": 7,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 431,
+     "likes": 7,
+     "comments": 0
     }
    },
    "first24": 400,
@@ -807,6 +862,11 @@
      "views": 514,
      "likes": 8,
      "comments": 0
+    },
+    "2026-11-28": {
+     "views": 514,
+     "likes": 8,
+     "comments": 0
     }
    },
    "first24": 454,
@@ -818,6 +878,11 @@
    "daily": {
     "2026-11-27": {
      "views": 404,
+     "likes": 6,
+     "comments": 0
+    },
+    "2026-11-28": {
+     "views": 407,
      "likes": 6,
      "comments": 0
     }
