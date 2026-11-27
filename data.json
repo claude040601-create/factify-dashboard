@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T18:07:58.802Z",
+ "updatedAt": "2026-11-27T18:18:01.250Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 9,
-  "views": 4488,
+  "views": 4496,
   "videos": 14
  },
  "videos": [
@@ -16,8 +16,8 @@
    "title": "Kela Berry Hai, Strawberry Nahi! 🍌🍓 #shorts",
    "published": "2026-11-27T13:45:38Z",
    "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
-   "views": 368,
-   "likes": 5,
+   "views": 389,
+   "likes": 6,
    "comments": 0
   },
   {
@@ -193,7 +193,7 @@
   },
   "2026-11-27": {
    "subs": 9,
-   "views": 4488,
+   "views": 4496,
    "videos": 14
   }
  },
@@ -817,8 +817,8 @@
    "published": "2026-11-27T13:45:38Z",
    "daily": {
     "2026-11-27": {
-     "views": 368,
-     "likes": 5,
+     "views": 389,
+     "likes": 6,
      "comments": 0
     }
    },
