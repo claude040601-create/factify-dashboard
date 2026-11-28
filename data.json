@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-28T06:35:59.679Z",
+ "updatedAt": "2026-11-28T06:46:01.959Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 9,
-  "views": 5286,
+  "views": 4496,
   "videos": 14
  },
  "videos": [
@@ -25,7 +25,7 @@
    "title": "Pet Khud Ko Kyun Nahi Pachata? 🧪🛡️ #shorts",
    "published": "2026-11-26T13:45:30Z",
    "thumb": "https://i.ytimg.com/vi/GWtJiDtE1oc/mqdefault.jpg",
-   "views": 546,
+   "views": 547,
    "likes": 8,
    "comments": 0
   },
@@ -198,7 +198,7 @@
   },
   "2026-11-28": {
    "subs": 9,
-   "views": 5286,
+   "views": 4496,
    "videos": 14
   }
  },
@@ -864,7 +864,7 @@
      "comments": 0
     },
     "2026-11-28": {
-     "views": 546,
+     "views": 547,
      "likes": 8,
      "comments": 0
     }
