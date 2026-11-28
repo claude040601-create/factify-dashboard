@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-28T08:32:54.992Z",
+ "updatedAt": "2026-11-28T08:42:58.116Z",
  "channel": {
   "title": "Factify Hindi",
   "handle": "@FactifyHindiFacts",
@@ -7,7 +7,7 @@
  },
  "latest": {
   "subs": 9,
-  "views": 4496,
+  "views": 5286,
   "videos": 14
  },
  "videos": [
@@ -17,7 +17,7 @@
    "published": "2026-11-27T13:45:38Z",
    "thumb": "https://i.ytimg.com/vi/oBRaNRECYDw/mqdefault.jpg",
    "views": 754,
-   "likes": 13,
+   "likes": 17,
    "comments": 0
   },
   {
@@ -198,7 +198,7 @@
   },
   "2026-11-28": {
    "subs": 9,
-   "views": 4496,
+   "views": 5286,
    "videos": 14
   }
  },
@@ -883,7 +883,7 @@
     },
     "2026-11-28": {
      "views": 754,
-     "likes": 13,
+     "likes": 17,
      "comments": 0
     }
    },
